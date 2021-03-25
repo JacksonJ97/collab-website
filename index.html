@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/devchallenges.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Collab.</title>
+</head>
+<body>
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="#"><img src="/img/Collab..png" alt="Collab logo" class="logo"></a>
+
+            <div class="close-button" onclick="toggleMobileNav()">
+                <button>
+                    <i class="fa fa-close"></i>
+                </button>
+            </div>
+        </div>
+
+        <a href="#" class="mobile-nav-home mobile-current-page">Home</a>
+        <a href="#" class="mobile-nav-about">About</a>
+        <a href="#" class="mobile-nav-services">Services</a>
+        <a href="#" class="mobile-nav-contact">Contact</a>
+        <a href="#" class="mobile-nav-pricing">Pricing</a>
+    </div>
+
+    <div class="container">
+        <header>
+            <a href="#"><img src="/img/Collab..png" alt="Collab logo" class="logo"></a>
+
+            <nav>
+                <a href="#" class="nav-home current-page">Home</a>
+                <a href="#" class="nav-about">About</a>
+                <a href="#" class="nav-services">Services</a>
+                <a href="#" class="nav-contact">Contact</a>
+                <a href="#" class="nav-pricing">Pricing</a>
+            </nav>
+
+            <div class="menu-button" onclick="toggleMobileNav()">
+                <button>
+                    <i class="fa fa-reorder"></i>
+                </button>
+            </div>
+            
+            <button class="get-started">Get Started</button>
+        </header>
+
+        <main>
+            <div class="main-content">
+                <h1 class="title">Collaborate Like<br>Never Before</h1>
+                <p class="subtitle">Proin consequat eros in dolor rhoncus, in pellentesque justo feugiat. Nunc nec porttitor sapien, vel congue diam.</p>
+                <button class="discover-video"><i class="fa fa-play-circle"></i>Discover Video</button>
+            </div>
+
+            <div class="main-image">
+                <img src="/img/data-x1.png" alt="two people looking at data" class="hero-image">
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="#" class="social-links-item"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="social-links-item"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-links-item"><i class="fa fa-youtube-play"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMobileNav() {
+            var element = document.getElementById("mobile-nav");
+
+            if (element.classList.contains("mobile-nav-open")) {
+                element.classList.remove("mobile-nav-open");
+            } else {
+                element.classList.add("mobile-nav-open");
+            }
+        }
+    </script>
+</body>
+</html>
